@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container eyelogo">
+            <img src="imgs/Illustration2.png" alt="eyelogoo">
+        </div>
+    </header>
+    
+    <section class="minibanner minibannerwrap">
+        <p>
+            Welcome to all things Cryptidcore, dear reader.
+        </p>
+    </section>
+
+    <section class="slidewords container wrapper query-disappear1">
+                <div>
+                    <h1>What is Cryptidcore?</h1>
+                    <p>
+                        Cryptidcore is a genre or aesthetic which focuses on the concepts of the supernatural, cryptids, aliens, mystery, and adventure. It is a romanticization of a life hunting evidence of ghosts and creatures such as Bigfoot or Mothman; delving into conspiracy theories and sometimes bordering on true crime.
+                    </p>
+                    <p>
+                        The aesthetic itself is heavily associated with <em>Cryptozoology</em>, the study of creatures from urban myths and folklore. Hence, the inherent mystery of the unknown and drive to discover are essential themes of Cryptidcore.
+                    </p>
+                    <p>
+                        Those that are part– or want to be part– of the Cryptidcore community enjoy the thrill of expanding their mundane horizons, opening up to the possibility of things beyond themselves as well as experiencing anything mythical and strange. 
+                    </p>
+                    <p>
+                        It’s an aesthetic for those in the ground looking up in the sky, searching for a pair of round, red eyes to stare back at them.
+    
+                    </p>
+                </div>
+                
+                    <h2>
+                        Feeling curious? Scroll down to learn more
+                    </h2>
+
+    </section>
+    <section class="second-section query-disappear2">
+        <div class="styles-text container wrapper">
+            <div>
+                <h1>What is Cryptidcore?</h1>
+
+                <p>
+                    Cryptidcore is a genre or aesthetic which focuses on the concepts of the supernatural, cryptids, aliens, mystery, and adventure. It is a romanticization of a life hunting evidence of ghosts and creatures such as Bigfoot or Mothman; delving into conspiracy theories and sometimes bordering on true crime.
+
+                </p>
+                <p>
+                    The aesthetic itself is heavily associated with <em>Cryptozoology</em>, the study of creatures from urban myths and folklore. Hence, the inherent mystery of the unknown and drive to discover are essential themes of Cryptidcore.
+                </p>
+                <p>
+                    Those that are part– or want to be part– of the Cryptidcore community enjoy the thrill of expanding their mundane horizons, opening up to the possibility of things beyond themselves as well as experiencing anything mythical and strange.
+                </p>
+                <p>
+                    It’s an aesthetic for those in the ground looking up in the sky, searching for a pair of round, red eyes to stare back at them.
+
+                </p>
+
+                <h2>
+                    Feeling curious? Scroll down to learn more
+                </h2>
+
+                <p>
+                    ▼ <br>
+                    ▼ <br>
+                    ▼
+                </p>
+            </div>
+        </div>
+</section>
+    
+
+    <section class="slideshow-disappear-query">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <img src="imgs/herobanners.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <img src="imgs/herobanners2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <img src="imgs/herobanners3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <img src="imgs/herobanners4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <img src="imgs/herobanners5.png" style="width:100%">
+            </div>
+
+        </div>
+            
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            
+    </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3750); // Change image every 2 seconds
+                }
+            </script>
+            
+        </div>
+    </div>
+    </section>
+    <section class="minibanner minibannerwrap minibanner-mainpage">
+    </section>
+
+    <section class="second-section">
+        <div class="three-circ-menu container wrapper ">
+            <div>
+                <a href="styles.html" class="linkstyler">
+                <img src="imgs/stylecircles.png" class="thisisalinkimages" alt="style">
+                    <div class="button-style button-hover">
+                    <h2>STYLE</h2>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="folklore.html" class="linkstyler">
+                <img src="imgs/folklorecircles.png" class="thisisalinkimages" alt="folklore">
+                    <div class="button-folklore button-hover">
+                    <h2>FOLKLORE</h2>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="media.html" class="linkstyler">
+                <img src="imgs/mediacircles.png" class="thisisalinkimages" alt="media">
+                    <div class="button-media button-hover">
+                    <h2>MEDIA</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-grid container wrapper">
+            <div>
+                <p class="footercopyright">
+                    2022 Copyright John (J.J.) Llorin. <br>All Rights Reserved.
+                    <br> NMED 3250-B Web Design
+                </p>
+            </div>
+            <div>
+                <a href="index.html">
+                <img src="imgs/illustration2.png">
+                </a>
+            </div>
+            <div>
+                <p><strong>Sources</strong></p>
+                <p>
+                    <a href="">Info: Wikipedia</a><br>
+                    <a href="https://cryptozoologycryptids.fandom.com/wiki/Cryptid">Info: Cryptid Wiki</a><br>
+                    <a href="https://aesthetics.fandom.com/wiki/Cryptidcore">Info: Aesthetic Wiki</a><br>
+                    <a href="https://unsplash.com/">Images: Unsplash</a><br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

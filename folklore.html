@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- this styling is specific to this page-->
+
+    <!-- borrowed code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow-->
+    <style>
+        * {box-sizing: border-box}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container-folk {
+            max-width: 2080px;
+            position: relative;
+            margin: auto;
+            background-color: #282828;
+                }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot-folk {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color:ghostwhite;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot-folk:hover {
+          background-color:goldenrod
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 0.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        </style>
+
+        <!-- end of borrowed code-->
+</head>
+
+<body>
+    <header>
+        <div class="container wrapper">
+          <div class="header-flex">
+            <div class="altlogo">
+            <a href="index.html"><img src="imgs/logo2.png" alt="eyelogo2"></a>
+            </div>
+            <div class="logoreplacer">
+              <a href="index.html"><img src="imgs/Illustration2.png" alt="eyelogo"></a>
+              </div>
+              <nav class="altnav">
+                <ul>
+                    <li><a href="styles.html" class="linkindicator">STYLE</a></li>
+                    <li><a href="folklore.html" class="youarehere linkindicator">FOLKLORE</a></li>
+                    <li><a href="media.html" class="linkindicator">MEDIA</a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+
+
+    </header>
+    
+    <section class="minibanner minibannerwrap folklore-miniban">
+      <p>
+         <a href="#cryptidjump" class="thisisalink linkindicator">Cryptids</a> • FOLKLORE • <a href="#lorejump"class="thisisalink linkindicator">Other Lore</a>
+      </p>
+  </section>
+
+    <section class="folk-background">
+            <div class="styles-text container wrapper">
+                <div>
+                    <h1>What are Cryptids?</h1>
+
+                    <p>
+                        Cryptids are creatures claimed to be existing somewhere in the wild
+                        but aren’t scientifically proven.
+
+                    </p>
+                    <p>
+                        Cryptids and the urban legends that birth them are found all over the world.  Scotland has the Loch Ness Monster, North America has Sasquatch, South America has Chupacabra. Of course there are much more out there and listing them all would be a pain.
+                    </p>
+                    <p>
+                        In the slideshow below, dear reader, you will learn about creatures and their lore, famous and obscure, with brief descriptions. This list by no means covers all of the creatures nor is it fully in-depth but it’ll serve as a basis for you to start your own research. 
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section class = "minibanner folklore-miniban">
+      <p>Beware, here there be monsters...</p>
+    </section>
+
+        
+    <!-- borrowed code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow-->
+    <a id="cryptidjump">
+    <div class="slideshow-container-folk">
+                <div class="stack">
+                  <span class="dot-folk" onclick="currentSlide(1)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(2)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(3)"></span>
+                  <span class="dot-folk" onclick="currentSlide(4)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(5)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(6)"></span>
+                  <span class="dot-folk" onclick="currentSlide(7)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(8)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(9)"></span>
+                  <span class="dot-folk" onclick="currentSlide(10)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(11)"></span> 
+                  <span class="dot-folk" onclick="currentSlide(12)"></span>
+                  <span class="dot-folk" onclick="currentSlide(13)"></span> 
+                </div>
+        <div>
+            <div class="mySlides fade">
+              <img src="imgs/sasquatch.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/chupacabra.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/hakutaku.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/ogopogo.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/deerlady.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/mothman.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/rougarou.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/squonk.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/manananggal.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/wendigo.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/shoreladdie.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/goatman.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+              <img src="imgs/crocotta.png" style="width:100%">
+            </div>
+        
+        </div>
+
+    </div>
+
+    </a>
+
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <!-- end of borrowed code-->
+
+
+    <section class="minibanner folklore-miniban">
+      <p>▼ Hungry for more lore? Look below... ▼</p>
+    </section>
+
+    <section class="second-section-folk">
+        <div class="three-circ-folklore container wrapper">
+            <div>
+              <a id="lorejump">
+                <img src="imgs/ghost-tattoo-4166 1.png" alt="ghosts">
+              </a>
+                    <div>
+                    <h2>Ghosts</h2>
+                    </div>
+                    <p>
+                      Apparitions of those who passed, either manifesting fully opaque, hauntingly translucent, or completely invisible to the naked eye save for their presence. Some spirits are harmless while others are more aggressive and dangerous.
+                    </p>
+                    <p>
+                        Sometimes, a spirit may be deceiving you, claiming to be a ghost when it may be something more malevolent. Good rule of thumb, don’t engage with spirits unless you are sure.
+                    </p>
+                    <p>
+                      <a href="https://cryptozoologycryptids.fandom.com/wiki/Cryptid" class="learnmorehere linkindicator">Learn more here.</a>
+                    </p>
+            </div>
+            <div>
+                <img src="imgs/aliens 1.png" alt="aliens">
+                    <div>
+                    <h3>Aliens</h3>
+                    </div>
+                    <p>
+                        E.T.s or extraterrestrials, are lifeforms originating not from Earth. Depending on which planet an alien comes from, one might call Mars’ <em>Martians</em>, Venus’ <em>Venutians</em>, Jupiter’s <em>Jovians</em>, and so on. Some believe these lifeforms live among us and are manipulating our society.
+                    </p>
+                    <p>
+                        There are several types of aliens believed to be existing somewhere among the stars. These include: the Greys, the Nordic Aliens, and the Little Green Men. 
+                    </p>
+                    <p>
+                      <a href="https://en.wikipedia.org/wiki/Extraterrestrial_life"class="learnmorehere linkindicator">Learn more here.</a>
+                  </p>
+            </div>
+            <div>
+                <img src="imgs/vampire-teeth-transparent-25 1.png" alt="vampires">
+                    <div>
+                    <h4>Vampires</h4>
+                    </div>
+                    <p>
+                        Fanged creatures with an aversion to sunlight, vampires are powerful undead who stalk the night for the taste and sustenance of blood. These blood leeches can be deterred by garlic-- good reason to get garlic bread.
+                    </p>
+                    <p>
+                        The most famous vampires you might think of are Count Dracula of Bram Stoker’s <em>Dracula</em> and Edward Cullen from the <em>Twilight</em> series which enthralled many impressionable teenage girls about a sparkling, pale dude.
+                    </p>
+                    <p>
+                      <a href="https://en.wikipedia.org/wiki/Vampire"class="learnmorehere linkindicator">Learn more here.</a>
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section class="minibanner minibannerwrap folklore-miniban">
+      <p>
+         <a href="folklore.html" class="thisisalink linkindicator">▲ Return to the top ▲</a>
+      </p>
+  </section>
+    
+    <footer>
+        <div class="footer-grid container wrapper">
+            <div>
+                <p class="footercopyright">
+                    2022 Copyright John (J.J.) Llorin. <br>All Rights Reserved.
+                    <br> NMED 3250-B Web Design
+                </p>
+            </div>
+            <div>
+                <a href="index.html">
+                <img src="imgs/illustration2.png">
+                </a>
+            </div>
+            <div>
+                <p><strong>Sources</strong></p>
+                <p>
+                    <a href="">Info: Wikipedia</a><br>
+                    <a href="https://cryptozoologycryptids.fandom.com/wiki/Cryptid">Info: Cryptid Wiki</a><br>
+                    <a href="https://aesthetics.fandom.com/wiki/Cryptidcore">Info: Aesthetic Wiki</a><br>
+                    <a href="https://unsplash.com/">Images: Unsplash</a><br>
+                    Images: Google Images
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

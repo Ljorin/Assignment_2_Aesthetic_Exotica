@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'IM Fell English', serif;
+
+    color: #FAF9F6;
+    font-size: 25px;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    padding: 80px 80px;
+}
+
+header .wrapper {
+    padding: 20px 50px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.eyelogo {
+    padding-top: 15px;
+    max-width: 360px;
+    justify-content: center;
+    text-align: center;
+}
+
+.altlogo {
+    max-width: 500px;
+}
+
+.altnav ul {
+    /*removes default styling*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    /*actual styling*/
+    display: flex;
+    column-gap: 100px;
+    
+}
+
+a {
+    text-decoration: none;
+    color:#FAF9F6;
+}
+
+a:hover {
+    color: #FAF9F6;
+}
+
+
+.linkindicator:hover{
+    color:#ed9b28;
+}
+
+.altnav .youarehere {
+    border-bottom: 4px solid #ed9b28;
+    padding-bottom: 10px;
+}
+
+.thisisalink {
+    border-bottom: 1px solid #ed9b28;
+    text-decoration: dotted;
+}
+.thisisalink2 {
+    border-bottom: 1px solid #ed9b28;
+    text-decoration: dotted;
+    display: inline-block;
+}
+.thisisalinkimages:hover {
+    opacity: 0.9;
+}
+
+header {
+    background-color: #553429;
+    align-content: center;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    position: absolute;
+    z-index: 9999;
+    padding-top: 390px;
+    padding-left: 30px;
+  }
+
+.minibanner {
+    background-color: #282828;
+    color:#FAF9F6;
+    text-align: center;
+}
+
+.minibanner-for-media-query {
+    display: none;
+}
+
+.query-disappear2 {
+    display: none;
+}
+
+.minibanner > p {
+    display: inline;
+    font-size: 20px;
+}
+
+.mediabannerresize {
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.folklore-miniban {
+    letter-spacing: 4px;
+}
+
+.minibanner-mainpage {
+    padding: 16px;
+}
+
+.linkstyler {
+    text-decoration: none;
+    color:#FAF9F6;
+}
+
+.rightplacer {
+    text-align: right;
+}
+
+
+.learnmorehere {
+    display: inline-block;
+    border-bottom: 7px solid #ed9b28;
+}
+
+/*-----code taken from https://www.w3schools.com/howto/howto_js_slideshow.asp------*/
+/*THIS ONE IS FOR THE MAIN PAGE SLIDESHOW*/
+
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 2080px;
+    position: relative;
+    margin: auto;
+    background-color: #282828;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    max-width: 2870px;
+    margin: auto;
+    display: none;
+  }
+  
+  
+  /*code added by JJ*/
+  .dotalign {
+    text-align: center;
+    background-color:#282828
+  }
+
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* end of borrowed code*/
+
+
+.slidewords {
+    position: absolute;
+    z-index: 99999999;
+    padding-left: 300px;
+    padding-top: 115px;
+}
+
+.pagedescriptor {
+    position: relative;
+    z-index: 99999999;
+    margin: auto;   
+}
+
+
+.folk-background {
+    background-image: url(../imgs/folkcolour.png);
+    margin: auto;
+    max-width: 2031px
+   
+}
+
+.styles-background {
+    background-image: url(../imgs/stylecolour.png);
+    margin: auto;
+    max-width: 2031px
+   
+}
+
+.media-background {
+    background-image: url(../imgs/mediacolour.png);
+    margin: auto;
+    max-width: 2031px
+   
+}
+
+.herotext {
+    color: #FAF9F6;
+    text-shadow: 2px 2px#1b1b1c;
+
+    padding: 80px;
+    padding-left: 300px;
+
+}
+
+.styles-text {
+    color: #FAF9F6;
+    text-shadow: 2px 2px#1b1b1c;
+
+}
+
+
+.herotext > div {
+    max-width: 1000px;
+    text-align: left;
+}
+
+.second-section {
+    background-image: url(../imgs/grungegreen.PNG);
+    color: #FAF9F6;
+    text-shadow: 2px 2px#1b1b1c;
+}
+
+
+/*for the second section specifically for folklore page*/
+.second-section-folk {
+    background-image: url(../imgs/folkcolour.png);
+    color: #FAF9F6;
+    text-shadow: 2px 2px#1b1b1c;
+    align-items: center;
+}
+
+/* the main grid menu for the three pages*/
+.three-circ-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    text-align: center;
+    align-items: end;
+}
+
+/* grid for the folklore tidbits beneath the slideshow*/
+.three-circ-folklore {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6%;
+    text-align: center;
+    align-items: end;
+}
+
+/*grid for the images on the style page*/
+.styles-imagegrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    text-align: center;
+    align-items: end;
+}
+
+
+.img-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    align-items: center;
+}
+
+footer {
+    background-color: #1b1b1c;
+    font-size: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    align-items: center;
+}
+
+.footer-grid div:nth-child(2) {
+    text-align: center;
+}
+
+.footer-grid div:last-child {
+    text-align: right;
+}
+
+.footercopyright {
+        text-align: left;
+}
+
+
+
+.button-style {
+    color:#FAF9F6;
+    background-color: #282828;
+    display: inline-block;
+    border-radius: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.button-style:hover {
+    color:#ed9b28
+}
+
+.button-folklore {
+    color: #FAF9F6;
+    background-color: #282828;
+    display: inline-block;
+    border-radius: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.button-folklore:hover {
+    color:#38ccbd;
+}
+
+.button-media {
+    color:#FAF9F6;
+    background-color: #282828;
+    display: inline-block;
+    border-radius: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.button-media:hover {
+    color:#37bb29;
+}
+
+.logoreplacer {
+    display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+   
+    .altlogo {
+        display: none;
+    }
+
+    .logoreplacer {
+        display: block;
+    }
+
+    .altnav ul {
+    
+        /*actual styling*/
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+        
+    }
+
+    .styles-text {
+        text-align: center;
+        min-width: 50px;
+    
+    }
+
+    .styles-imagegrid {
+        grid-template-columns: 1fr;
+        grid-gap: 0%;
+
+    }
+
+    .slideshow-disappear-query{
+        display: none;
+    }
+
+    .stack {
+        flex-direction: none;
+        grid-gap: 8px;
+        position: absolute;
+        padding-top: 0;
+        padding-left: 0px;
+      }
+
+      .query-disappear1{
+        display: none;
+      }
+      .query-disappear2{
+        display: block;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid div:nth-child(2) {
+        text-align: center;
+    }
+    
+    .footer-grid div:last-child {
+        text-align: center;
+    }
+
+    .footercopyright {
+        text-align: center;
+    }
+
+    .three-circ-folklore {
+        grid-template-columns: 1fr;
+        grid-gap: 0%;
+    }
+
+    .rightplacer {
+        text-align: center;
+    }
+
+
+    .mediabannerresize1 {
+        display: none;
+    }
+
+    .mediabannerresize2 {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .minibanner-for-media-query {
+        display: block;
+        background-color: #282828;
+        color:#FAF9F6;
+        text-align: center;
+        padding: 1px;
+    }
+
+    .wrapper {
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    .minibanner-mainpage {
+        display: none;
+    }
+
+    .three-circ-menu {
+        grid-template-columns: 1fr;
+        grid-gap: 0%;
+    }
+}
